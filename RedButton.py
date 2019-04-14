@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from Tkinter import *
 
+
 class App:
   def __init__(self, master):
     frame = Frame(master)
@@ -14,6 +15,8 @@ class App:
 
   def write_slogan(self):
           print( "Tkinter is easy to use!")
+        
+TestModul.testmodul12(name)
 
 root = Tk()
 app = App(root)
