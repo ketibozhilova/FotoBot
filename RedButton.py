@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 14 17:06:29 2019
+from tkinter import *
+from tkinter import messagebox
 
-@author: kejt
-"""
+top = Tk()
+top.geometry("270x90")
+def helloCallBack():
+   msg = messagebox.showinfo( "Hello Python", "Hello World")
 
+B = Button(top, text = "Hello", command = helloCallBack)
+B.place(x = 50,y = 50)
+top.mainloop()
