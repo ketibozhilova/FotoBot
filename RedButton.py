@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from tkinter import *
-from tkinter import messagebox
-import 
+from Tkinter import *
 
-top = Tk()
-top.geometry("270x90")
-def helloCallBack():
-   msg = messagebox.showinfo( "Hello Python", "Hello World")
+class App:
+  def __init__(self, master):
+    frame = Frame(master)
+    frame.pack()
 
-B = Button(top, text = "Hello", command = helloCallBack)
-B.place(x = 50,y = 50)
-top.mainloop()
+    self.slogan = Button(frame,
+                         text="Take a picture",
+                         command=self.write_slogan)
+    self.slogan.pack(side=LEFT)
+
+  def write_slogan(self):
+          print( "Tkinter is easy to use!")
+
+root = Tk()
+app = App(root)
+root.mainloop()
