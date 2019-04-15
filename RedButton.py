@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from tkinter import *
-import testmodul
+import camerafoto
 
 
 class App:
@@ -15,13 +15,9 @@ class App:
     self.slogan.pack(side=LEFT)
 
   def write_slogan(self):
-          testmodul.testmodul12("jöl")
+          camerafoto.takeapicture()
+
       
-      #print( "Tkinter is easy to use!")
-  
-          
-
-
 root = Tk()
 app = App(root)
 root.mainloop()
