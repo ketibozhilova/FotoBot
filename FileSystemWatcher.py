@@ -5,7 +5,7 @@ from subprocess import call
  
  
 class Watcher:
-    DIRECTORY_TO_WATCH = "/home/pi/Pictures/Aufnahme/image" + str(i) + ".jpg"
+    DIRECTORY_TO_WATCH = "/home/pi/Pictures/Aufnahme/image.jpg"
  
     def __init__(self):
         self.observer = Observer()
