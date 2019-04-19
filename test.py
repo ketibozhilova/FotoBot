@@ -9,7 +9,7 @@ def searchfile():
 
         browser = webdriver.Firefox("/usr/bin/")
 
-        browser.get('http://www.google.com.au/imghp')
+        browser.get('https://www.google.com/imghp?hl=en')
 
         # Click "Search by image" icon
         elem = browser.find_element_by_class_name('gsst_a')
