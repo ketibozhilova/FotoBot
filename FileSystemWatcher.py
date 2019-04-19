@@ -4,7 +4,7 @@ from watchdog.events import FileSystemEventHandler
 
 
 class Watcher:
-    DIRECTORY_TO_WATCH = "/home/pi/Pictures/aufnahme/images.jpg"
+    DIRECTORY_TO_WATCH = "/home/pi/Pictures/aufnahme/"
 
     def __init__(self):
         self.observer = Observer()  #beobachter
