@@ -2,14 +2,14 @@ from selenium import webdriver
 
 
 
-filePath = "/home/pi/Pictures/original/"
+filePath = "/home/pi/Pictures/original/image.jpg"
 
 
 def searchfile():
 
-        browser = webdriver.Firefox()
+        browser = webdriver.Firefox("/usr/bin/")
 
-        browser.get('https://www.google.com/imghp?sbi=1')
+        browser.get('http://www.google.com.au/imghp')
 
         # Click "Search by image" icon
         elem = browser.find_element_by_class_name('gsst_a')
