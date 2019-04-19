@@ -1,6 +1,7 @@
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+import saveOrigPicture
 
 
 class Watcher:
@@ -36,7 +37,9 @@ class Handler(FileSystemEventHandler):
 
         elif event.event_type == 'modified':
             # Taken any action here when a file is modified.
+            saveOrigPicture.verarbeite()
             print ("Received modified event - %s." % event.src_path)
+            
 
 
 if __name__ == '__main__':
