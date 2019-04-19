@@ -2,7 +2,7 @@ from selenium import webdriver
 
 
 
-filePath = "/home/pi/Pictures/original"
+filePath = "/home/pi/Pictures/original/"
 
 
 def searchfile():
