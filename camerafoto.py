@@ -11,4 +11,5 @@ def takeapicture():
     camera.capture('/home/pi/Pictures/Aufnahme/image.jpg')
     camera.stop_preview()
 
-    Testmodul.verarbeite()
+
+Testmodul.verarbeite()
