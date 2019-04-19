@@ -8,5 +8,5 @@ def verarbeite():
     anzahl = len(dateien)
             
     orig_file = pathlib.Path("/home/pi/Pictures/aufnahme/image.jpg")
-    copyto_file = pathlib.Path("/home/pi/Pictures/original/orig" + str(anzahl + 1) + ".jpg")
+    copyto_file = pathlib.Path("/home/pi/Pictures/original/orig" + str(int(anzahl + 1)) + ".jpg")
     orig_file.rename(copyto_file)
