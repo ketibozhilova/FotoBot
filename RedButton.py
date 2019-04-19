@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from tkinter import *
-import camerafoto
+import foto_erstellen
 
 
 class App:
@@ -15,7 +15,7 @@ class App:
     self.slogan.pack(side=LEFT)
 
   def write_slogan(self):
-          camerafoto.takeapicture()
+          foto_erstellen.takeapicture()
 
       
 root = Tk()
